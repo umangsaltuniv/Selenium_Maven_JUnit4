@@ -12,7 +12,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 public class SeleniumTest {
 
 	@Test
-	public void test01() throws Exception{
+	public void test01(){
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
 		driver.get("https://www.google.com");
@@ -20,7 +20,6 @@ public class SeleniumTest {
 		String expectedTitle = "Google";
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
-		Thread.sleep(1000);
 		System.out.println(actualTitle);
 		
 		driver.quit();
