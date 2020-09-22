@@ -9,10 +9,10 @@ import java.io.File;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-public class SeleniumTest throws Exception{
+public class SeleniumTest {
 
 	@Test
-	public void test01() {
+	public void test01() throws Exception{
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
 		driver.get("https://www.google.com");
