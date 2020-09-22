@@ -9,7 +9,7 @@ import java.io.File;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-public class SeleniumTest {
+public class SeleniumTest throws Exception{
 
 	@Test
 	public void test01() {
@@ -17,9 +17,10 @@ public class SeleniumTest {
 		driver = new HtmlUnitDriver();
 		driver.get("https://www.google.com");
 		
-		String expectedTitle = "abc";
+		String expectedTitle = "Google";
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
+		Thread.sleep(1000);
 		System.out.println(actualTitle);
 		
 		driver.quit();
