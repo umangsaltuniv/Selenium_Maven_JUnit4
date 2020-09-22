@@ -17,7 +17,7 @@ public class SeleniumTest {
 							+ File.separator
 							+ "drivers"
 							+ File.separator
-							+ "chromedriver.exe";
+							+ "chromedriver";
 		
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		
